@@ -115,7 +115,7 @@ def download_with_ffmpeg(url, start_time, end_time, output_file):
         return False
 
 # URL for the video
-URL = "https://www.youtube.com/live/i4wDvw5mFos"
+URL = "https://www.youtube.com/live/????"
 
 def main():
     # First check if yt-dlp is installed as a Python package
@@ -141,20 +141,20 @@ def main():
             print("Please install one with: pip install yt-dlp")
             sys.exit(1)
     
-    # Download first segment: 29:50 to 30:50
+    # Download first segment: ex: 29:50 to 30:50
     print("\n--- Downloading Segment 1 (29:50 to 30:50) ---")
     if use_yt_dlp:
         success1 = download_segment(
             url=URL,
-            start_time="00:29:50",
-            end_time="00:30:50",
+            start_time="00:29:50",  # edit here for timestamps
+            end_time="00:30:50",    # edit here for timestamps
             output_file="segment1_29m50s-30m50s.mp4"
         )
     else:
         success1 = download_with_ffmpeg(
             url=URL,
-            start_time="00:29:50",
-            end_time="00:30:50",
+            start_time="00:29:50",  # edit here for timestamps
+            end_time="00:30:50",    # edit here for timestamps
             output_file="segment1_29m50s-30m50s.mp4"
         )
     
@@ -163,15 +163,15 @@ def main():
     if use_yt_dlp:
         success2 = download_segment(
             url=URL,
-            start_time="01:10:00",
-            end_time="01:10:40",
+            start_time="01:10:00",  # edit here for timestamps
+            end_time="01:10:40",    # edit here for timestamps
             output_file="segment2_1h10m00s-1h10m40s.mp4"
         )
     else:
         success2 = download_with_ffmpeg(
             url=URL,
-            start_time="01:10:00",
-            end_time="01:10:40",
+            start_time="01:10:00",  # edit here for timestamps
+            end_time="01:10:40",    # edit here for timestamps
             output_file="segment2_1h10m00s-1h10m40s.mp4"
         )
     
