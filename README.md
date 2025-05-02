@@ -1,6 +1,6 @@
 # YoutubeSectionDownloader
 
-This is a simple script that allows you to download specific segments from YouTube videos. Instead of downloading entire videos, you can specify the exact start and end times for the segments you want.
+This is a simple script that allows you to download specific segments from YouTube videos. Instead of downloading entire videos, you can specify the exact start and end times for the segments you want. Works with livestreams (ended) and youtube clips as well.
 
 ## Features
 
