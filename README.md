@@ -9,8 +9,7 @@ This is a simple script that allows you to download specific segments from YouTu
 - Two download methods:
   - Primary: Using yt-dlp (faster and more reliable)
   - Fallback: Using youtube-dl with ffmpeg (if yt-dlp fails)
-- Avoids PATH-related issues by using Python modules directly
-- Clean error handling and informative output
+- Clean error handling, informative output
 
 ## Requirements
 
